@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/mdui.min.css">
+    <link rel="stylesheet" href="./resources/extra.css">
+    <link rel="stylesheet" href="./resources/buttons.css">
+    <link rel="icon" type="image/svg+xml" href="https://preview.locyanfrp.cn/favicon.ico">
+    <script src="./resources/mdui.min.js"></script>
+    <title>Locyan Frp 乐青映射</title>
+<script async="" src="./resources/ga.js"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KWN2LXQ8RV');
+</script><style>
+    /* 我是shab, 这部分抄的云默安的, 我在这里挂个友链, zyghit.cn */
+    body {
+        background-color: #000;
+    }
+</style></head>
+
+	<!-- Google tag (gtag.js) -->
+
+
+
+
+
+<body>
+    <div id="app" class="mdui-appbar mdui-color-teal-000 mdui-appbar-fixed">
+        <div id="header" class="mdui-toolbar">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+                <i id="pgc" class="mdui-icon material-icons" onclick="MenuOnClick();">menu</i>
+            </a>
+            <a href="javascript:;" id="ltitle" class="mdui-typo-headline">Locyan Frp</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon">
+                <i id="pgc" class="mdui-icon material-icons" mdui-tooltip="{content: &#39;刷新&#39;}">refresh</i>
+            </a>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: &#39;更多&#39;}" mdui-menu="{target: &#39;#index-menu&#39;}">
+                <i id="pgc" class="mdui-icon material-icons">more_vert</i>
+            </a>
+            <ul class="mdui-menu" id="index-menu">
+                <li class="mdui-menu-item">
+                    <a href="https://preview.locyanfrp.cn/login" class="mdui-ripple"><i class="mdui-icon material-icons"></i>登录</a>
+                </li>
+                <li class="mdui-menu-item">
+                    <a href="https://preview.locyanfrp.cn/register" class="mdui-ripple"><i class="mdui-icon material-icons"></i>注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 2023/1/25 by XiaMoHuaHuo_CN: 首屏 -->
+    <div class="mdui-card first-screen" style="margin: 0; height: 100vh;">
+        <center id="first-screen-container" style="margin-top: 40vh">
+            <h1>Locyan Frp</h1>
+            <p>免费 公益的Frp</p>
+            <a class="button" style="background-color: rgb(99, 226, 183);" href="https://preview.locyanfrp.cn/">开始使用</a>&nbsp;&nbsp;&nbsp;
+            <a class="button" style="background-color: rgb(53, 198, 255);" href="https://doc.locyan.cn/#/Frp">帮助文档</a>
+        </center>
+    </div>
+
+    <div class="mdui-container">
+        <div class="mdui-row">
+            <div class="mdui-col-md-4">
+                <!-- 第一列start -->
+                <!--<div class="mdui-card" style="margin-top: 18px; max-width: 400px;">
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title" style="font-weight: 600; margin-left: 6px;">关于我们</div>
+                        <div class="mdui-card-primary-subtitle" style="font-weight: 600; margin-left: 6px;">
+                            我们是一个互联网团队，来自于四海，云聚与此地，为之热爱而赴汤蹈火
+                        </div>
+                    </div>
+                </div>-->
+                <div class="mdui-card" id="cdftool" style="max-width: 400px;">
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title" style="font-weight: 600; margin-left: 6px;">Locyan Frp的优势
+                        </div>
+                        <p style="font-weight: 700; margin-left: 6px;">1.精美的面板</p>
+                        <div class="mdui-card-primary-subtitle" style="font-weight: 600; margin-left: 15px;">
+                            我们的新面板采用Vue+NaiveUI, 设计清爽, 操作便捷
+                        </div>
+                        <br>
+                        <div class="mdui-divider"></div>
+                        <br>
+                        <p style="font-weight: 700; margin-left: 6px;">2.一键启动</p>
+                        <div class="mdui-card-primary-subtitle" style="font-weight: 600; margin-left: 15px;">
+                            由我们最新设计的一键启动软件，一行命令即可懒人化启动
+                        </div>
+                        <br>
+                        <div class="mdui-divider"></div>
+                        <br>
+                        <p style="font-weight: 700; margin-left: 6px;">3.节点分布广</p>
+                        <div class="mdui-card-primary-subtitle" style="font-weight: 600; margin-left: 15px;">
+                            国内坐落8台节点 国外坐落3台节点 稳定不卡顿
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- 第一列end -->
+            <!-- 第二列start -->
+            <div class="mdui-col-md-4">
+                <div class="mdui-card" id="cdftool" style="max-width: 400px;">
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title" style="font-weight: 600; margin-left: 6px;">Locyan
+                            Frp快速导航栏
+                        </div>
+                        <div class="mdui-card-primary-subtitle" style="font-weight: 600; margin-left: 6px;">
+                            忘记网址了? 来这里看看
+                        </div>
+                        <br>
+                        <div class="mdui-card-actions">
+                            <a href="https://preview.locyanfrp.cn/" class="lin-button button mdui-color-red mdui-ripple" mdui-tooltip="{content: &#39;Preview&#39;}">新版网站</a>
+                            <a href="https://www.locyanfrp.cn/?page=login" class="lin-button button mdui-color-teal-a400 mdui-ripple" mdui-tooltip="{content: &#39;Old&#39;}">旧版网站</a>
+                            <a href="https://download.locyan.cn/" class="lin-button button mdui-color-brown mdui-ripple" mdui-tooltip="{content: &#39;Software Download&#39;}">软件下载</a>
+                        </div>
+                        <div class="mdui-card-actions" style="margin-left: 6px;">
+                            <a href="https://doc.locyan.cn/#/Frp" class="lin-button button mdui-color-red-a100 mdui-ripple" mdui-tooltip="{content: &#39;Official Document&#39;}">官方文档</a>
+                            <a href="javascript:;" class="lin-button button mdui-color-blue-a100 mdui-ripple" mdui-tooltip="{content: &#39;前往手机版&#39;}" onclick="NoNewIndex();">觉得此页面排版有问题？</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第三列start -->
+            <div class="mdui-col-md-4">
+                <div class="mdui-card" id="cdftool" style="max-width: 400px;">
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title" style="font-weight: 600; margin-left: 6px;">其他项目 </div>
+                        <div class="mdui-card-primary-subtitle" style="font-weight: 600; margin-left: 6px;">
+                            <a href="https://cloud.locyan.cn/" style="font-size: 15px;" target="_blank" mdui-tooltip="{content: &#39;品质好, 价格优惠&#39;}">乐青云</a>
+                            <a href="https://pay.locyan.cn/" style="font-size: 15px;" target="_blank" mdui-tooltip="{content: &#39;三网可免挂可挂, 回调速度快, 0费率, 便宜&#39;}">乐青支付</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdui-card" style="margin-top: 19px; max-width: 400px;">
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title" style="font-weight: 600; margin-left: 6px;">友情链接
+                        </div>
+                        <div class="mdui-card-content friend-links">
+                            <a href="https://txnb.vip/" target="_blank"><img class="mdui-hoverable" src="./resources/Logo-白底.png"></a>
+                            <a href="https://blog.ovome.icu/" target="_blank"><img class="mdui-hoverable" src="https://blog.ovome.icu/images/favicon.png"></a>
+                        </div>
+                        <div class="mdui-card-primary-subtitle" style="font-weight: 600; margin-left: 6px;">
+                            申请友情链接？发送邮件至<a href="mailto:admin@locyan.cn">admin@locyan.cn</a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="mdui-card" style="margin-top: 19px; max-width: 400px;">
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title" style="font-weight: 600; margin-left: 6px;">
+                            版权声明
+                        </div>
+                        <div class="mdui-card-primary-subtitle" style="font-weight: 600; margin-left: 6px;">
+                            Copyright © 2022-2023 Locyan Network All right reserved. 乐青网络科技 版权所有.
+                            <br>页面版本<strong>Version 1.0</strong>
+                            <br>此页面由<a href="https://www.dxcftde.cn/" target="_blank">DXCFTDE</a>编写 | 由<a href="https://www.mdui.org/" target="_blank">MDUI</a>驱动
+                            <br>本站由<a href="https://cloud.locyan.cn/" mdui-tooltip="{content: &#39;就是我们自己的 有产品需求尽管买&#39;}">乐青云</a>提供资金 | 服务器支持
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第三列end -->
+    </div>
+    <!-- 第二列end -->
+
+    
+    <br><br>
+    
+    
+    <!-- 
+       　  　▃▆█▇▄▖
+　 　 　 ▟◤▖　　　◥█▎
+   　 ◢◤　 ▐　　　 　▐▉
+　 ▗◤　　　▂　▗▖　　▕█▎
+　◤　▗▅▖◥▄　▀◣　　█▊
+▐　▕▎◥▖◣◤　　　　◢██
+█◣　◥▅█▀　　　　▐██◤
+▐█▙▂　　     　◢██◤
+◥██◣　　　　◢▄◤
+ 　　▀██▅▇▀
+    ♂♂ 114514-->
+
+
+<script>
+    var $ = mdui.$;
+    function MenuOnClick() {
+        mdui.snackbar({
+            message: '看什么看? 还没学会呢',
+            position: 'right-top',
+        })
+    }
+    function NoNewIndex() {
+        mdui.snackbar({
+            message: '点什么点? 适配都做好了还点?',
+            position: 'right-top',
+        });
+    }
+</script>
+<style>
+    @media (max-width=1000px) {
+        .mdui-card {
+            margin: 20px;
+        }
+    }
+</style>
+
+</body><!-- <script type="text/javascript">
+    var system = {};
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    if (system.win || system.xll) {
+        window.location.href = "#";
+    } else {
+        window.location.href = "#";
+    }
+</script> --></html>
